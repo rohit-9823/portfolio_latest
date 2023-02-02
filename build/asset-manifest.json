@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c133372.css",
+    "main.js": "/static/js/main.689a5ab3.js",
+    "static/media/typeswhite.gif": "/static/media/typeswhite.b30f7371e0ca6f77cec3.gif",
+    "static/media/star.gif": "/static/media/star.acd0ef3e5ba33f8a99f5.gif",
+    "static/media/whitedetail.gif": "/static/media/whitedetail.c322288c4d39dcc42394.gif",
+    "static/media/logo.gif": "/static/media/logo.a062f2c5af6f5720c505.gif",
+    "static/media/changecolor.gif": "/static/media/changecolor.1af6c4c41f9645de4c8a.gif",
+    "static/media/imail.gif": "/static/media/imail.681a6a1a3c2b93d411fb.gif",
+    "static/media/bye.gif": "/static/media/bye.384c22e0625325eb58c5.gif",
+    "static/media/sparkle.gif": "/static/media/sparkle.3f17b49a0edd171ec8b0.gif",
+    "static/media/ccrc.png": "/static/media/ccrc.afa55fad099f74ba2abb.png",
+    "static/media/jamna.png": "/static/media/jamna.6e618d552516a1afd126.png",
+    "static/media/xceltrip.png": "/static/media/xceltrip.5875957dbb912efb3df5.png",
+    "static/media/vsn.png": "/static/media/vsn.065c6eb162b966ba4c87.png",
+    "static/media/nit.jpeg": "/static/media/nit.bdb8ca5e7b82280242aa.jpeg",
+    "static/media/prabhuipo.png": "/static/media/prabhuipo.be6a4cf9d2e5777412c3.png",
+    "static/media/cite.png": "/static/media/cite.62aeb35106893a02c293.png",
+    "static/media/up.png": "/static/media/up.e5ce350e4ab737e71de6.png",
+    "static/media/tms.png": "/static/media/tms.87aebda65529ae735b38.png",
+    "index.html": "/index.html",
+    "main.9c133372.css.map": "/static/css/main.9c133372.css.map",
+    "main.689a5ab3.js.map": "/static/js/main.689a5ab3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c133372.css",
+    "static/js/main.689a5ab3.js"
+  ]
+}

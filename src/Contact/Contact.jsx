@@ -2,15 +2,22 @@ import React from "react";
 import { useRef } from "react";
 import { useHistory } from "react-router-dom";
 import mail from "../assets/image/imail.gif";
+import emailjs from "@emailjs/browser";
 function Contact() {
   const name = useRef();
+  const form = useRef();
   const email = useRef();
   const msg = useRef();
   const history = useHistory();
-  const submit = () => {
-    console.log(name);
-    history.push("/");
-  };
+  const sendEmail = (e) =>{
+    e.preventDefault();
+    emailjs.sendForm("service_aawbdvk","template_1yr7w3p",form.current,"g1756zPN2Z91E3B8T").then(()=>{
+      alert("message send successfully");
+      form.current.reset();
+    },(error)=>{
+      alert("Failed to send message");
+    })
+  }
   return (
     <>
       <div className="contactme" id="contact">
@@ -39,7 +46,7 @@ function Contact() {
           </a>
         </div>
         <div className="rightcontactme">
-          <form action="https://formspree.io/f/moqzvlwy" method="POST">
+          <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
               name="name"
@@ -65,7 +72,7 @@ function Contact() {
               placeholder="Your Message"
               style={{ resize: "none" }}
             ></textarea>
-            <button className="contactsubmit_btn" onClick={submit}>
+            <button className="contactsubmit_btn" >
               Submit
             </button>
           </form>

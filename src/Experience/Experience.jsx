@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import AOS from "aos";
+import win from "../assets/image/win.avif"
 import vsn from "../assets/image/vsn.png";
 import ccrc from "../assets/image/ccrc.png";
 import cite from "../assets/image/cite.png";
@@ -41,13 +42,22 @@ function Experience() {
       <div className="experience_content">
         {show ? (
           <>
+            <div data-aos="fade-up-right" className="showeducation">
+              <div className="edulogo">
+                <img src={win} alt="vsn" />
+              </div>
+              <div className="edu_description">
+                <h2>Master of Information Technology</h2>
+                <h4>Graduated</h4>
+              </div>
+            </div> 
+            <br />
             <div data-aos="fade-down-right" className="showeducation">
               <div className="edulogo">
                 <img src={cite} alt="vsn" />
               </div>
               <div className="edu_description">
-                <h2>College of Information Technology and Engineering </h2>
-                <h3>BCA</h3>
+                <h2>Bachelor of Computer Application</h2>
                 <h4>Graduated</h4>
               </div>
             </div>
@@ -58,21 +68,11 @@ function Experience() {
               </div>
               <div className="edu_description">
                 <h2>Capital College and Research Center </h2>
-                <h3>H.S.E.B</h3>
-                <h4>Completed</h4>
+                <h3>Year 12</h3>
+                <h4>Graduated</h4>
               </div>
             </div>
-            <br />
-            <div data-aos="fade-up-right" className="showeducation">
-              <div className="edulogo">
-                <img src={vsn} alt="vsn" />
-              </div>
-              <div className="edu_description">
-                <h2>VS Niketan English Medium School</h2>
-                <h3>SLC</h3>
-                <h4>Completed</h4>
-              </div>
-            </div>
+            
           </>
         ) : (
           <>

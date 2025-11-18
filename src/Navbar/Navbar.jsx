@@ -6,11 +6,16 @@ import "../assets/style/style.scss";
 
 function Navbars() {
   const [theme, settheme] = useState("dark_theme");
+  const [submenu, setsubmenu] = useState("no-submenu");
   const handletoogle = () => {
     {
       theme == "dark_theme" ? settheme("light_theme") : settheme("dark_theme");
     }
   };
+  const handlenavbartoogle=()=>{
+submenu=="no-submenu"? setsubmenu("show-submenu") : setsubmenu("no-submenu");
+
+  }
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
@@ -39,7 +44,9 @@ function Navbars() {
               <i class="fa-solid fa-sun"></i>
               <div class="ball" />
             </label>
+            
 
+            <i class="fa-solid fa-bars hamburger" onClick={handlenavbartoogle}></i>
             <a href="#contact" className="linkname">
               Contact
             </a>
@@ -58,8 +65,38 @@ function Navbars() {
 
             {/* <button onClick={handletoogle}>click</button> */}
           </div>
+          
         </Container>
       </Navbar>
+      {submenu=="show-submenu"?
+      <ul className={`list_linkname ${submenu === "show-submenu" ? "show-submenu" : ""}`} id="list_linkname">
+  <li>
+    <a href="#hello" className="inner_list_linkname">
+      <i className="fa-solid fa-house nav_icons"></i> Home
+    </a>
+  </li>
+  <li>
+    <a href="#about" className="inner_list_linkname">
+      <i className="fa-solid fa-user nav_icons"></i> About
+    </a>
+  </li>
+  <li>
+    <a href="#exp" className="inner_list_linkname">
+      <i className="fa-solid fa-briefcase nav_icons"></i> Experience
+    </a>
+  </li>
+  <li>
+    <a href="#project" className="inner_list_linkname">
+      <i className="fa-solid fa-rocket nav_icons"></i> Projects
+    </a>
+  </li>
+  <li>
+    <a href="#contact" className="inner_list_linkname">
+      <i className="fa-solid fa-phone nav_icons"></i> Contact
+    </a>
+  </li>
+</ul>
+            :null}
     </>
   );
 }

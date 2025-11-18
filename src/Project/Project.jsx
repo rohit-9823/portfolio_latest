@@ -20,8 +20,7 @@ function Project() {
         </div>
         <div data-aos="zoom-in-up" className="project1_desc">
           <h4>Prabhu Ipo</h4>
-          <button>Prabhu IPO</button>
-          <button>Web App</button>
+          <span style={{color:"rgb(206, 56, 206)"}}>Web App</span>
 
           <p>
             Prabhu IPO is developed with the thought of solving the problems
@@ -52,8 +51,7 @@ function Project() {
         {/* ------------------------------TMS------------------------------------ */}
         <div data-aos="zoom-in-down" className="project1_desc">
           <h4>Task Management System</h4>
-          <button>Task Management</button>
-          <button>Web App</button>
+          <span style={{color:"rgb(206, 56, 206)"}}>Web App</span>
 
           <p>
             TMS is built to manage projects and products flow in the IT
@@ -88,8 +86,7 @@ function Project() {
           className="project1_desc"
         >
           <h4>Jamna</h4>
-          <button>Travel & Tour</button>
-          <button>Web App</button>
+          <span style={{color:"rgb(206, 56, 206)"}}>Web App</span>
           <p>
             Jaamna Nepal is your local-global travel platform offering you
             amazing benefits. Jaamna Nepal has established a full fledge local
@@ -120,8 +117,7 @@ function Project() {
 
         <div data-aos="zoom-out-right" className="project1_desc">
           <h4>Xcel Trip</h4>
-          <button>Travel & Tour</button>
-          <button>Web App</button>
+          <span style={{color:"rgb(206, 56, 206)"}}>Web App</span>
           <p>
             XcelTrip is a next-gen, decentralized, travel and booking platform.
             We are disintermediating travel, and empowering travelers and

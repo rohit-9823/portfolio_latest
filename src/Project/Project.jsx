@@ -58,6 +58,7 @@ function Project() {
             industry. Assign tasks to employees. Track the progress of the
             employees and projects. Bug fixing Work on new features.{" "}
           </p>
+          
           <p style={{ color: "rgb(206, 56, 206)" }}>
             <span
               className="readmore"
